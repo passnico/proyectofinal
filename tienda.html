@@ -35,52 +35,61 @@
         </nav>
     </header>
 
-    <div>
 
-        <img class="div__imagenes" src="/img/tienda-tecnologia-2.jpg">
+<!-----------------SECCION PRODUCTOS | BOOTSTSRAP----------------------->
 
+<div class="card">
+    <img src="..." class="card-img-top" alt="...">
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-
-    <div>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/W0lCi5DpZGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-
-        </iframe>
-
+  </div>
+  
+  <div class="card" aria-hidden="true">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
     </div>
+  </div>
 
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-    <!--------Menú Desplegable-------->
+<!-----------------SECCION TIENDA | APLICANDO GRIDS ----------------->
 
-    <section>
-        <select name="color" id="color">
-            <option value="blanco">Blanco</option>
-            <option value="gris">Gris</option>
-            <option value="plateado">Plateado</option>
-            <option value="dorado">Dorado</option>
-        </select>
-        <br>
-        <br>
-    </section>
-    <section>
-        <label for="envio">Método de Envío</label>
-        <br>
-        <input type="radio" name="enviodomicilio">Envío a Domicilio
-        <input type="radio" name="retiroentienda">Retiro en Tienda
-        
-    </section>
-    <br>
-    <br>
-    
+<section id="tienda">
+    <div class="contenedor">
+        <h2>Productos más vendidos</h2>
+        <p>Todos los productos que queres tener en un solo lugar.</p>
+        <div class="gridLista">
+            <h3>Categorías</h3>
+            <ul>
+                <li>
+                    <a href="" title="PRODUCTOS MAS VENDIDOS" class="btn-link">PRODUCTOS MAS VENDIDOS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="gridPrincipal">
+            <img class="imagenGaleria imagenUno" src="/img/imagen-airpodmax.png" alt="">
+            <img class="imagenGaleria imagenDos" src="/img/imagen-airpods.png" alt="">
+            <img class="imagenGaleria imagenTres" src="/img/imagen-airtag.png" alt="">
+            <img class="imagenGaleria imagenCuatro" src="/img/imagen-magsafe.png" alt="">
+            <img class="imagenGaleria imagenCinco" src="/img/imagen-notebook.png" alt="">
+            <img class="imagenGaleria imagenSeis" src="/img/imagen-tablet.png" alt="">
+        </div>
+    </div>
+</section>
+
 <!-------------------SECCION FOOTER-------------------->
 <footer id="footer">
 
@@ -97,7 +106,7 @@
     </div>
 
 </footer>
-       
+
 
 </body>
 </html>
