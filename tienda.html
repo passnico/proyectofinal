@@ -7,18 +7,12 @@
     <link rel="shortcut icon" href="/img/favicon.png">
     <link rel="stylesheet" href="/css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./css-bts/bootstrap.rtl.min.css">
-    
-    <script src="./js-bts/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <title>Tienda</title>
 </head>
 <body>
-    
-
     <!-------------Menú------------->
     <header id="header">
         <div>
@@ -35,43 +29,41 @@
         </nav>
     </header>
 
+    <div>
 
-<!-----------------SECCION PRODUCTOS | BOOTSTSRAP----------------------->
+        <img class="div__imagenes" src="/img/tienda-tecnologia-2.jpg">
 
-<!-----------------SECCION TIENDA | APLICANDO GRIDS ----------------->
-
-<section id="tienda">
-    <div class="contenedor">
-        <h2>Productos más vendidos</h2>
-        <p>Todos los productos que queres tener en un solo lugar.</p>
-        <div class="gridLista">
-            <h4>Categorías</h4>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/tienda.html">Celulares</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tienda.html">Auriculares</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tienda.html">Tablets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/tienda.html">Accesorios para tus dispositivos</a>
-                        </li>
-                        </ul>
-        </div>
-        <div class="gridPrincipal">
-            <img class="imagenGaleria imagenUno" src="/img/imagen-airpodmax.png" alt="">
-            <img class="imagenGaleria imagenDos" src="/img/imagen-airpods.png" alt="">
-            <img class="imagenGaleria imagenTres" src="/img/imagen-airtag.png" alt="">
-            <img class="imagenGaleria imagenCuatro" src="/img/imagen-magsafe.png" alt="">
-            <img class="imagenGaleria imagenCinco" src="/img/imagen-notebook.png" alt="">
-            <img class="imagenGaleria imagenSeis" src="/img/imagen-tablet.png" alt="">
-        </div>
     </div>
-</section>
 
+    <div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W0lCi5DpZGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+
+    </div>
+    <!--------Menú Desplegable-------->
+
+    <section>
+        <select name="color" id="color">
+            <option value="blanco">Blanco</option>
+            <option value="gris">Gris</option>
+            <option value="plateado">Plateado</option>
+            <option value="dorado">Dorado</option>
+        </select>
+        <br>
+        <br>
+    </section>
+    <section>
+        <label for="envio">Método de Envío</label>
+        <br>
+        <input type="radio" name="enviodomicilio">Envío a Domicilio
+        <input type="radio" name="retiroentienda">Retiro en Tienda
+        
+    </section>
+    <br>
+    <br>
+    
 <!-------------------SECCION FOOTER-------------------->
 <footer id="footer">
 
@@ -88,7 +80,7 @@
     </div>
 
 </footer>
-
+       
 
 </body>
 </html>
