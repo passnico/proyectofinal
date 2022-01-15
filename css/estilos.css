@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*------------HEADER------------*/
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 6;
+}
+
+/*-----------NAVBAR--------------*/
+.header__nav {
+    margin-right: 23px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    margin-left: 23px;
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase; /*---MAYUSCULAS----*/
+    font-weight: bold; /*---NEGRITA----*/
+    color: rgb(61, 57, 49);
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 5px;
+    max-width: 30px;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.imagenEncabezado {
+    width: 100%; /*--FULL RESPONSIVE | QUE OCUPE EL 100% DE LA PANTALLA--*/
+}
+
+
+/*------CONOCENOS--------*/
+
+.contenedor {
+    text-align: center;
+    margin: 50px;
+    padding: 30px; 
+    border: solid 1.5px #8c998c; /*--RECUADRO--*/
+    border-radius: 25px; /*--REDONDEO DEL RECUADRO--*/
+}
+
+.contenedor h2 {
+    margin-top: 15px; /*--MARGEN SUPERIOR DEL H2--*/
+    margin-bottom: 15px; /*--MARGEN INFERIOR DEL H2--*/
+}
+
+.contenedor p {
+    font-size: 23px;
+    margin: 23px;
+}
+
+
+a:hover
+a:focus {
+    background-size: 100% 2px;
+}
+
+
+/*------SECCION TIENDA | APLICAMOS GRIDS----------*/
+
+.imagenGaleria {
+    width: 100%;
+    height: 100%; /*TAMAÑO*/
+}
+.imagenGaleria:hover {
+    filter: contrast(90%); /*SE PONE GRIS*/
+    z-index: 6;
+}
+.gridPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "imagenUno imagenDos imagenTres"
+        "imagenCuatro imagenCinco imagenSeis"
+    ;
+}
+
+/*---------SECCION CONTACTO----------*/
+.area {
+    display: block;
+    width: 50%; /*------FULL RESPONSIVE | QUE OCUPE EL 50%-------*/
+    padding: 10px;
+    margin: 23px auto /*PARA QUE SE PONGA DE FORMA AUTOMATICA EN EL*/;
+}
+
+.boton {
+
+    color: black;
+    background-color: #e3fce3;
+    padding: 10px;
+    text-transform: uppercase; /*--MAYUSCULAS--*/
+    font-weight: bold; /*--NEGRITAS--*/
+    border: none; /*--QUITAR SOMBREADO----*/
+    border-radius: 2.3px;
+    cursor: pointer;
+}
+
+/* SECCION FOOTER */
+footer {
+    background-color: rgb(219, 223, 201);
+    width: 100%;
+    height: 100%    ;
+    justify-content: space-evenly; /*---SEPARACION ENTRE AMBOS ELEMENTOSS---*/
+    display: flex;
+    align-items: center;
+}
+
+footer ul li{
+list-style-type: none;    
+}
+
+footer ul li a {
+
+    margin-top: 11.5px;
+    margin-left: 11.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+footer h4 {
+    color: #444b44;
+}
+
+/* BOTON DE WHATSAPP */
+
+.botonWsp img {
+    width: 70px;
+    position: fixed; /*--POSICION FIJA EN DESPLAZAMIENTO----*/
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/*-------VISTA DESDE CELULAR---------*/
+
+@media only screen and (max-width:597px) {
+
+    .gridPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+        "imagenUno"
+        "imagenDos"
+        "imagenTres"
+        "imagenCuatro"
+        "imagenCinco"
+        "imagenSeis"; /*UNO DEBAJO DEL OTRO*/
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+
+.imagenCinco {
+    grid-area: imagenCinco;
+}
+
+.imagenSeis {
+    grid-area: imagenSeis;
+}
+
+
+/*-------VISTA EN TABLET-------*/
+@media only screen and (min-width:600px) and (max-width:1023px) {
+
+    .gridPrincipal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "imagenUno imagenDos"
+            "imagenTres imagenCuatro"
+            "imagenCinco imagenSeis"; /*DOS POR FILA*/
+    }
+
+
+
